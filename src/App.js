@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import './App.css';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,6 @@ class App extends Component {
 
   render() {
       return (
-
           <button onClick={this.changeLikes}>{this.state.count} likes</button>
 
       )
