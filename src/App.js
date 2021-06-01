@@ -21,7 +21,7 @@ class App extends Component {
 
   render() {
       return (
-          <button onClick={this.changeLikes}>{this.state.count} likes</button>
+          this.state.count === 1 ? <button onClick={this.changeLikes}>{this.state.count} like</button> : <button onClick={this.changeLikes}>{this.state.count} likes</button>
 
       )
   }
